@@ -2,149 +2,74 @@
 % rt-labs CLA
 %
 % For use with SOEM and SOES.
-% Enables us to dual license 3rd party contributions. 
+% Enables us to dual license 3rd party contributions.
 %
 % Use xelatex to generate PDFs.
 %
-\documentclass[10pt,a4paper]{letter}
-
-\usepackage{tabularx}
-\usepackage{fullpage}
-\usepackage{parskip}
-\usepackage{indentfirst}
-\usepackage[table]{xcolor}
-\definecolor{dark-gray}{gray}{0.4}
-\definecolor{middle-gray}{gray}{0.7}
-\definecolor{light-gray}{gray}{0.95}
-\definecolor{rt-green}{RGB}{185,208,52}
-\definecolor{light-green}{RGB}{224,231,172}
-\usepackage{microtype}
+\documentclass[10pt,a4paper]{article}
 \usepackage{fontspec}
-%\usepackage{titlesec}
-\setmainfont[Ligatures=TeX]{Lato}
-\setsansfont[Ligatures=TeX]{Lato}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage[yyyymmdd]{datetime}
-\usepackage{currfile}
-\usepackage{caption}
-\usepackage{booktabs}
-\usepackage{datatool,filecontents}
-\usepackage{enumitem}
-\usepackage{spreadtab}
-\usepackage{wrapfig}
-\usepackage{color}
-\usepackage{setspace}
-\usepackage{float} % needed to use the H parameter in figure
-\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
-%\usepackage{fancyhdr}
-\usepackage{tabulary}
-\usepackage{layout}
-%\pagestyle{fancy}
-%\renewcommand{\footrulewidth}{0.4pt}%
-%\DTLsetseparator{|}
-\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{tabularx}
 
-%
-% No user serviceable parts below.
-%
+
+% Switch to Light font series instead of normal. Family and encoding are already selected.
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Lato}
+\setromanfont{Lato Light}
+
+% Disable automatic indentation on new paragraphs.
+\setlength\parindent{0pt}
+
+% Set paragraph spacing
+\setlength{\parskip}{3pt}
 
 % Set enumeration to 1, 1.1, and (i)
-\renewcommand{\labelenumi} {\arabic{enumi}.} 
+\renewcommand{\labelenumi} {\arabic{enumi}.}
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 \renewcommand{\labelenumiii}{(\roman{enumiii})}
 
 \renewcommand{\arraystretch}{2}
 
+
+\title{CONTRIBUTOR LICENSE AGREEMENT}
+\author{}
+\date{}
+
 \begin{document}
+\thispagestyle{empty}
+\pagenumbering{gobble}
+\maketitle
+\small
+Thank you for your interest in the SOES and SOEM projects. In order to clarify the intellectual property license granted with contributions of software from any person or entity (the "Contributor"), rt-labs AB would like to have a Contributor License Agreement on file that has been signed by the Contributor, indicating agreement to the license terms below. this license is for your protection as a Contributor of software to SOES and SOEM projects and does not change your right to use your own contributions for any other purpose.
+
+If you have not already done so, please complete this Agreement and send a copy by regular mail to
+\begin{center}
+\textbf{RT-Labs AB, Andra Långgatan 46, 413 27 Göteborg, Sweden}
+\end{center}
+Please read this document carefully before signing and keep the original for your records.
 
 \medskip
-
-\begin{center}
-   \Large{\textbf{SOEM/SOES CONTRIBUTOR LICENSE AGREEMENT}}
-\end{center}
-
-Thank you for your interest in the SOES and SOEM projects. In order to clarify
-the intellectual property license granted with contributions of software from
-any person or entity (the "Contributor"), rt-labs AB would like to have
-a Contributor License Agreement on file that has been signed by the Contributor,
-indicating agreement to the license terms below. This license is for your
-protection as a Contributor of software to SOES and SOEM projects and does not
-change your right to use your own contributions for any other purpose.
-
-If you have not already done so, please complete this Agreement and send a copy
-by regular mail to \textbf{rt-labs AB, Värmlandsgatan 2, SE-413 28 Göteborg,
-   Sweden} or by e-mail to \textbf{\texttt{openethercatsociety@rt-labs.com}}.
-
-Please read this document carefully before signing and keep the original for
-your records.
-
-%%\begin{Form}
-%%\begin{tabularx}{\textwidth}[b]{rX}
-%\begin{table}[H]
-%\begin{tabular}{ p{3cm} p{10cm} }
-%\end{tabular}
-%\end{table}
-%%\end{tabularx}
-
-%%\end{Form}
+\begin{tabularx}{\textwidth}{rX}
+Full Name & \hrulefill \\
+Email & \hrulefill \\
+Telephone & \hrulefill \\
+Mailing Address & \hrulefill \\
+\end{tabularx}
 \medskip
 
 \begin{enumerate}
-
-   \item You and rt-labs AB hereby accept and agree to the following terms and
-      conditions: Your "Contributions" means all of your past, present and
-      future contributions of object code, source code and documentation to SOES
-      and SOEM projects, however submitted to SOES and SOEM projects, excluding
-      any submissions that are conspicuously marked or otherwise designated in
-      writing by You as "Not a Contribution."
-
-   \item You hereby grant to rt-labs a non-exclusive, irrevocable, worldwide,
-      no-charge, transferable copyright license to use, execute, prepare
-      derivative works of, and distribute (internally and externally, in object
-      code and, if included in your Contributions, source code form) your
-      Contributions. Except for the rights granted to rt-labs in this paragraph,
-      You reserve all right, title and interest in and to your Contributions.
-
-   \item You represent that you are legally entitled to grant the above license.
-      If your employer(s) have rights to intellectual property that you create,
-      you represent that you have received permission to make the Contributions
-      on behalf of that employer, or that your employer has waived such rights
-      for your Contributions to SOES and SOEM projects.
-
-   \item You represent that, except as disclosed in your Contribution
-      submission(s), each of your Contributions is your original creation. You
-      represent that your Contribution submissions(s) included complete details
-      of any license or other restriction (including, but not limited to,
-      related patents and trademarks) associated with any part of your
-      Contributions)(including a copy of any applicable license agreement). You
-      agree to notify rt-labs of any facts or circumstances of which you become
-      aware that would make Your representations in the Agreement inaccurate in
-      any respect.
-
-   \item You are not expected to provide support for your Contributions, except
-      to the extent you desire to provide support. Your may provide support for
-      free, for a fee, or not at all. Your Contributions are provided as-is,
-      with all faults, defects and errors, and without any warranty of any kind
-      (either express or implied) including, without limitation, any implied
-      warranty of merchantability and fitness for a particular purpose and any
-      warranty of non-infringement.
-
+\item You and rt-labs AB hereby accept and agree to the following terms and conditions:
+Your "Contributions" means all of your past, present and future contributions of object code, source code and documentation to SOES and SOEM projects, however submitted to SOES and SOEM projects, excluding any submissions that are conspicuously marked or otherwise designated in writing by You as "Not a Contribution."
+\item You hereby grant to rt-labs a non-exclusive, irrevocable, worldwide, no-charge, transferable copyright license to use, execute, prepare derivative works of, and distribute (internally and externally, in object code and, if included in your Contributions, source code form) your Contributions. Except for the rights granted to rt-labs in this paragraph, You reserve all right, title and interest in and to your Contributions.
+\item You represent that you are legally entitled to grant the above license. If your employer(s) have rights to intellectual property that you create, you represent that you have received permission to make the Contributions on behalf of that employer, or that your employer has waived such rights for your Contributions to SOES and SOEM projects.
+\item You represent that, except as disclosed in your Contribution submission(s), each of your Contributions is your original creation. You represent that your Contribution submissions(s) included complete details of any license or other restriction (including, but not limited to, related patents and trademarks) associated with any part of your Contributions)(including a copy of any applicable license agreement). You agree to notify rt-labs of any facts or circumstances of which you become aware that would make Your representations in the Agreement inaccurate in any respect.
+\item You are not expected to provide support for your Contributions, except to the extent you desire to provide support. Your may provide support for free, for a fee, or not at all. Your Contributions are provided as-is, with all faults, defects and errors, and without any warranty of any kind (either express or implied) including, without limitation, any implied warranty of merchantability and fitness for a particular purpose and any warranty of non-infringement.
 \end{enumerate}
 
 \medskip
-\begin{Form}
-{\renewcommand{\arraystretch}{1.2}%
-\begin{tabularx}{\textwidth}[t]{lX}
-Full Name & \TextField[name=fullname,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
-Email & \TextField[name=email,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
-Telephone & \TextField[name=telephone,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
-Mailing Address & \TextField[name=address,multiline=true,height=3\baselineskip,donotscroll=true,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
-GitHub account & \TextField[name=github,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
-Date & \TextField[name=date,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
-Please sign & \TextField[name=signature,width=12.5cm,backgroundcolor=light-gray,bordercolor=]{ } \\\cmidrule{2-2}
+\begin{tabularx}{\textwidth}{rX}
+Please sign & \hrulefill \\
+Date & \hrulefill \\
 \end{tabularx}
-}
-\end{Form}
 
 \end{document}
